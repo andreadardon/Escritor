@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul>
+        <li><%= link_to "Inicio", welcome_index_path %></li>
+        <li><%= link_to "Acerca de", welcome_about_path %></li>
+   </ul>
 
 <%= yield %>
 
