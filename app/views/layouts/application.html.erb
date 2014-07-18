@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bloccit</title>
+    <title>Escritor.Co</title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -9,8 +9,9 @@
   <body>
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><%= link_to "Bloccit", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Escritor.Co", root_path %></li>
+        <li><%= link_to "Acerca de", about_path %></li>
+        <li><%= link_to "Cursos", cursos_path %></li>
       </ul>
  
        <% if flash[:notice] %>

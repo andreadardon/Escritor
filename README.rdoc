@@ -3,6 +3,8 @@ Escritor.Co
 Un sitio para aprender a escribir. Cursos de escritura creativa, escritura para blogs y redacción.
 
 
+config/application.yml.
+
 
 == README
 
