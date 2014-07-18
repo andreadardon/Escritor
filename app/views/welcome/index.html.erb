@@ -1,2 +1,24 @@
-<h1>Bienvenido a Escritor.Co</h1>
-<p>Esta es la página principal de Escritor.Co</p>
+<br/>
+<div class="jumbotron">
+  <h1>Escritor.Co</h1>
+  <p>Escritor.Co es un sitio para todos los que quieren ser escritores.</p>
+  <p>
+      <%= link_to "Inicia sesión", new_user_session_path, class: 'btn btn-primary' %> o 
+      <%= link_to "Regístrate", new_user_registration_path, class: 'btn btn-primary' %> hoy.
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Cursos de escritura creativa</h2>
+    <p>¿Quieres aprender a escribir creativamente? ¿Quieres armar ya tu novela? ¡Escritor.Co es para ti!.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Escritura para blogs</h2>
+    <p>¡Conviértete en el mejor bloggero!</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Cursos de redacción</h2>
+    <p>Aprende a redactar mejor tus cartas, correos electrónicos, memos y todo lo que necesites escribir.</p>
+  </div>
+</div>

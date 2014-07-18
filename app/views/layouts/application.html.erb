@@ -12,6 +12,15 @@
         <li><%= link_to "Escritor.Co", root_path %></li>
         <li><%= link_to "Acerca de", about_path %></li>
         <li><%= link_to "Cursos", cursos_path %></li>
+
+        <div class="pull-right user-info">
+           <% if current_user %>
+             Hola <%= current_user.email %>! <%= link_to "Salir", destroy_user_session_path, method: :delete %>
+           <% else %>
+             <%= link_to "Inicia sesión", new_user_session_path %> or 
+             <%= link_to "Regístrate", new_user_registration_path %>
+           <% end %>
+         </div>
       </ul>
  
        <% if flash[:notice] %>
