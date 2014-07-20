@@ -1,13 +1,9 @@
 Escritor::Application.routes.draw do
   devise_for :users
-  get "cursos/index"
-  get "cursos/show"
-  get "cursos/new"
-  get "cursos/edit"
-  resources :cursos
+  resources :courses
   get 'about' => 'welcome#about'
   root to: 'welcome#index'
-  get 'courses' => 'welcome#courses'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

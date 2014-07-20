@@ -32,9 +32,12 @@ ActiveRecord::Schema.define(version: 20140718233718) do
   create_table "exercises", force: true do |t|
     t.string   "title"
     t.text     "body"
+    t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "exercises", ["course_id"], name: "index_exercises_on_course_id"
 
   create_table "posts", force: true do |t|
     t.string   "title"

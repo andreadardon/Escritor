@@ -1,2 +1,10 @@
-<h1>Cursos de escritura</h1>
-<p>¿Qué quieres escribir?</p>
+<h1>All Courses</h1>
+<% @courses.each do |course| %>
+  <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to course.title, course %>
+       </h4>
+     </div>
+   </div>
+<% end %>
