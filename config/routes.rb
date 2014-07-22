@@ -3,6 +3,7 @@ Escritor::Application.routes.draw do
   resources :courses
   get 'about' => 'welcome#about'
   root to: 'welcome#index'
+  resources :exercises
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
