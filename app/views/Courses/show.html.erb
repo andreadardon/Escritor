@@ -1,2 +1,9 @@
-<h1><%= @course.title %></h1>
-<p><%= @course.body %></p>
+  <ul>
+
+<% @exercises.each do |exercise| %>
+    <li>
+      <h1><%= exercise.title %></h1>
+      <p><%= exercise.body %></p>
+    </li>
+<% end %>
+  </ul>
