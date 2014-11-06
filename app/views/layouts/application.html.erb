@@ -17,7 +17,7 @@
            <% if current_user %>
              Hola <%= current_user.name %>! <%= link_to "Salir", destroy_user_session_path, method: :delete %>
            <% else %>
-             <%= link_to "Inicia sesión", new_user_session_path %> or 
+             <%= link_to "Inicia sesión", new_user_session_path %> o 
              <%= link_to "Regístrate", new_user_registration_path %>
            <% end %>
          </div>

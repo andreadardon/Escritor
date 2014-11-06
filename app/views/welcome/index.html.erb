@@ -1,24 +1,115 @@
-<br/>
-<div class="jumbotron">
-  <h1>Escritor.Co</h1>
-  <p>Escritor.Co es un sitio para todos los que quieren ser escritores.</p>
-  <p>
-      <%= link_to "Inicia sesión", new_user_session_path, class: 'btn btn-primary' %> o 
-      <%= link_to "Regístrate", new_user_registration_path, class: 'btn btn-primary' %> hoy.
-  </p>
+<!DOCTYPE html>
+<html>
+<head>
+
+<style media="screen" type="text/css">
+
+h1{
+    text-align: center;
+    font-size: 1.4em;
+    margin: auto;
+    padding: 5px 5px 5px 5px;  
+    width: 60%;
+    display:block;
+    padding: 30px;
+    background: #65CED6;
+    height: 350px;
+    width: 1200px;
+}
+h2 { 
+    font-size: 1.8em;
+    display: block;
+    position: relative;
+    margin: 50px;
+    text-align: center;
+  }
+
+
+#footer { 
+        height: 350px;
+        width: 1200px;
+        color: #666;
+        background-color: #e7e7e7;
+        position: relative;
+}
+
+</style>
+</head>
+
+<body>
+
+<!--div class="jumbotron"-->
+
+<div id="header"></div>
+<div class="row">
+        <div class="header"></div>
+              <h1> <img src="http://i69.photobucket.com/albums/i68/2372911/Banner-aqua_zpsf856f170.png"></h1>
+              <h2> Todos podemos ser escritores </h2> 
+        </div>
+</div>
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <h2>Cursos de escritura creativa</h2>
-    <p>¿Quieres aprender a escribir creativamente? ¿Quieres armar ya tu novela? ¡Escritor.Co es para ti!.</p>
+
+<ul class="small-block-grid-2 large-block-grid-4">
+        <img src="http://i69.photobucket.com/albums/i68/2372911/Escritura-Creativa-Icon_zps3b03f3da.png">
+        <%= link_to "Ingresa al curso", course_id: 1 %>
+        
+        <img src="http://i69.photobucket.com/albums/i68/2372911/Armandotunovela-icon_zps5ab4cf12.png">
+        <%= link_to "Ingresa al curso", course_id: 2%>
+        
+        <img src="http://i69.photobucket.com/albums/i68/2372911/Escritura-para-blogs-icon_zps9c58e2fc.png">
+        <%= link_to "Ingresa al curso", course_id: 3%>
+</ul>
+
+<ul class="small-block-grid-2 large-block-grid-6">
+
+        <img src="http://i69.photobucket.com/albums/i68/2372911/Redaccio3010n-Icon_zps72d30dfa.png"/>
+        <%= link_to "Ingresa al curso", course_id: 4%>
+
+        <img src="http://i69.photobucket.com/albums/i68/2372911/Bootcamp-icon_zps78dcd5fd.png"/>
+        <%= link_to "Ingresa al curso", course_id: 5%>
+</ul> 
+
+<div id="footer">
+  <div class="row">
+    <div class="small-block-3">
+      <a href="http://escritor.co/">
+        <img src="http://i69.photobucket.com/albums/i68/2372911/iconoescritor-blancoynegro_zps411f3547.png"/>
+      </a>
+      <p class="small">
+        "Escritor.Co es un lugar donde puedes convertirte en escritor. Si tu sueño siempre ha sido escribir una gran novela o simplemente saber escribir bien, estás en el lugar adecuado.
+        Hecho en Sacatepéquez, Guatemala © 2014 Escritor.Co"
+      </p>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h2>Escritura para blogs</h2>
-    <p>¡Conviértete en el mejor bloggero!</p>
+
+  <div class="row">
+      <div class="small-block-3">
+        <h6>
+          <span>Nosotros</span>
+        </h6>
+        <ul class="small">
+          <li><a href="http://escritor.co/">Blog</a></li>
+          <li><%= link_to "Acerca de", about_path %></li>
+          <li><a href="http://escritor.co/">Contact</a></li>
+        </ul>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h2>Cursos de redacción</h2>
-    <p>Aprende a redactar mejor tus cartas, correos electrónicos, memos y todo lo que necesites escribir.</p>
+
+  <div class="row">
+      <div class="small-block-3">
+        <h6>
+          <span>Redes Sociales</span>
+        </h6>
+        <ul class="small">
+          <li><a href="http://escritor.co/">Blog</a></li>
+          <li><a href="https://www.facebook.com/escritor.Co">Facebook</a></li>
+          <li><a href="https://twitter.com/escritorco">Twitter</a></li>
+        </ul>
+    </div>
   </div>
 </div>
+
+</body>
+
+ </html>         

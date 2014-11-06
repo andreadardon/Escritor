@@ -1,7 +1,9 @@
-<%= form_for Answer.new do |a| %>
+<%= form_for @answer do |a| %>
 
-  Write your answer here:
-  <%= a.text_field :body %>
+  Escribe tu respuesta aquí:
+  <%= a.text_area(:body, style: "width: 500px; height: 300px;" ) %>
+  <%= a.hidden_field(:exercise_id, value: @exercise.id) %>
 
-  <%= a.submit %>
+
+  <%= a.submit 'Guardar' %>
 <% end %>

@@ -16,7 +16,7 @@ def index
 
   def show
     @course = Course.find(params[:id])
-    @exercises = @course.exercises 
+    @exercise = @course.exercises.first
   end
 
 end
