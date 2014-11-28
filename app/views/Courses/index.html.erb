@@ -1,4 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style media="screen" type="text/css">
+
+#mainwrapper {  
+  font: 10pt normal Arial, sans-serif;  
+  height: auto;  
+  margin: 80px auto 0 auto;  
+  text-align: center;  
+  width: 660px;  
+}  
+
+#mainwrapper .box {  
+    border: 5px solid #fff;  
+    cursor: pointer;  
+    height: 182px;  
+    float: left;  
+    margin: 5px;  
+    position: relative;  
+    overflow: hidden;  
+    width: 200px;  
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;  
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;  
+    box-shadow: 1px 1px 1px 1px #ccc;  
+}  
+  
+#mainwrapper .box img {  
+    position: absolute;  
+    left: 0;  
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+}  
+
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {  
+    opacity: 0;  
+    width: 170px;  
+    height: 170px;  
+    text-align: left;  
+    padding: 15px;  
+}  
+
+</style>
+</head>
+
+<body>
+
 <h1>Todos los cursos</h1>
+
+
+
 <% @courses.each do |course| %>
   <div class="media">
      <div class="media-body">
@@ -8,3 +62,13 @@
      </div>
    </div>
 <% end %>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="CT7CWJPW2XA8Y">
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+

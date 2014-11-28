@@ -52,6 +52,10 @@ gem 'mini_magick'
 
 gem 'fog'
 
+group :test do
+  gem 'rspec-rails', '~> 3.1.0'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -4,18 +4,18 @@
 
 <style media="screen" type="text/css">
 
-h1{
-    text-align: center;
-    font-size: 1.4em;
-    margin: auto;
-    padding: 5px 5px 5px 5px;  
-    width: 60%;
-    display:block;
-    padding: 30px;
-    background: #65CED6;
-    height: 350px;
-    width: 1200px;
+
+.header {
+  background-color: #65CED6;
+  height: 300px;
+  width: 1150px;
+  display: block;
+  position: relative;
+  margin-left: -15px;
+  text-align: center;
 }
+
+
 h2 { 
     font-size: 1.8em;
     display: block;
@@ -24,14 +24,173 @@ h2 {
     text-align: center;
   }
 
+.curso1 {
+  height: 265px;
+  max-width: 222px;
+  position: relative;
+  border-radius: 1px 6px 6px 1px;
+  float: left;
+  min-height: 1px;
+  margin: 0 0 3.5% 3.5%;
+  left: 150px;
+  right: 150px;
+  top: 100px;
 
-#footer { 
-        height: 350px;
-        width: 1200px;
-        color: #666;
-        background-color: #e7e7e7;
-        position: relative;
 }
+
+.curso2 {
+  height: 265px;
+  max-width: 222px;
+  position: relative;
+  border-radius: 1px 6px 6px 1px;
+  float: left;
+  min-height: 1px;
+  margin: 0 0 3.5% 3.5%;
+  left: 100px;
+  right: 200px;
+  top: 100px;
+
+}
+
+.curso3 {
+  height: 265px;
+  max-width: 222px;
+  position: relative;
+  border-radius: 1px 6px 6px 1px;
+  float: left;
+  min-height: 1px;
+  margin: 0 0 3.5% 3.5%;
+  left: 50px;
+  right: 400px;
+  top: 100px;
+
+}
+
+.curso4 {
+  height: 265px;
+  max-width: 222px;
+  position: relative;
+  border-radius: 1px 6px 6px 1px;
+  float: left;
+  min-height: 1px;
+  margin: 0 0 3.5% 3.5%;
+  left: 300px;
+  right: 200px;
+  top: 100px;
+  bottom: 1000px;
+
+}
+
+.curso5 {
+  height: 265px;
+  max-width: 222px;
+  position: relative;
+  border-radius: 1px 6px 6px 1px;
+  float: left;
+  min-height: 1px;
+  margin: 0 0 3.5% 3.5%;
+  left: 50px;
+  right: 200px;
+  top: 100px;
+  bottom: 1000px;
+
+}
+
+img.CoursesIcons:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+#footer1 { 
+        height: 350px;
+        width: 400px;
+        color: #666;
+        background-color: #F2F1F0;
+        /* background: linear-gradient(to right, #65CED6 0, #30A2A5 100%); */      
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        margin-top: 200px;
+}
+
+#footer1 img {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+p.small {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: baseline;
+
+}
+
+p {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#footer2 { 
+        height: 350px;
+        width: 400px;
+        color: #666;
+        background-color: #F2F1F0;  
+        position: relative;
+        float: left;
+        margin-top: 200px;
+        text-align: center;
+        font-size: 14px;
+}
+
+#footer3 { 
+        height: 350px;
+        width: 450px;
+        color: #666;
+        background-color: #F2F1F0; 
+        position: relative;
+        float: left;
+        margin-top: 200px;
+        text-align: center;
+        font-size: 14px;
+}
+
+h6 {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+a.socialIcons:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+
+}
+
+.content {
+  margin-bottom: 50px;
+}
+
+h3{
+  margin-top: 200px;
+  margin-left: 270px;
+  float: right;
+  text-align: center;
+  display: block;
+}
+
+.btn {
+  margin-top: 200px;
+  margin-left: 100px;
+  float: left;
+  background: linear-gradient(to left,rgba(54,186,194,0.9) 0,rgba(60,211,173,0.9) 100%);
+}
+
 
 </style>
 </head>
@@ -42,73 +201,111 @@ h2 {
 
 <div id="header"></div>
 <div class="row">
-        <div class="header"></div>
-              <h1> <img src="http://i69.photobucket.com/albums/i68/2372911/Banner-aqua_zpsf856f170.png"></h1>
-              <h2> Todos podemos ser escritores </h2> 
-        </div>
+    <div class="header">
+        <h1> <img src="http://i69.photobucket.com/albums/i68/2372911/Banner-aqua_zpsf856f170.png"> </h1>
+        <h2> Todos podemos ser escritores </h2> 
+    </div>
 </div>
 </div>
 
+<div id="content">
+</div>
+<div class"row courses">
+  <div class="col-md-4">
+    <div class="curso1">
+       <a href="/courses/1"> <img class="CoursesIcons" src="http://i69.photobucket.com/albums/i68/2372911/Escritura-Creativa-Icon2_zps873dd36e.png"> </a>
+  </div>
 
-<ul class="small-block-grid-2 large-block-grid-4">
-        <img src="http://i69.photobucket.com/albums/i68/2372911/Escritura-Creativa-Icon_zps3b03f3da.png">
-        <%= link_to "Ingresa al curso", course_id: 1 %>
-        
-        <img src="http://i69.photobucket.com/albums/i68/2372911/Armandotunovela-icon_zps5ab4cf12.png">
-        <%= link_to "Ingresa al curso", course_id: 2%>
-        
-        <img src="http://i69.photobucket.com/albums/i68/2372911/Escritura-para-blogs-icon_zps9c58e2fc.png">
-        <%= link_to "Ingresa al curso", course_id: 3%>
-</ul>
-
-<ul class="small-block-grid-2 large-block-grid-6">
-
-        <img src="http://i69.photobucket.com/albums/i68/2372911/Redaccio3010n-Icon_zps72d30dfa.png"/>
-        <%= link_to "Ingresa al curso", course_id: 4%>
-
-        <img src="http://i69.photobucket.com/albums/i68/2372911/Bootcamp-icon_zps78dcd5fd.png"/>
-        <%= link_to "Ingresa al curso", course_id: 5%>
-</ul> 
-
-<div id="footer">
-  <div class="row">
-    <div class="small-block-3">
-      <a href="http://escritor.co/">
-        <img src="http://i69.photobucket.com/albums/i68/2372911/iconoescritor-blancoynegro_zps411f3547.png"/>
-      </a>
-      <p class="small">
-        "Escritor.Co es un lugar donde puedes convertirte en escritor. Si tu sueño siempre ha sido escribir una gran novela o simplemente saber escribir bien, estás en el lugar adecuado.
-        Hecho en Sacatepéquez, Guatemala © 2014 Escritor.Co"
-      </p>
+  <div class="col-md-4">
+    <div class="curso2">
+      <a href="/courses/2"> <img class="CoursesIcons" src="http://i69.photobucket.com/albums/i68/2372911/Armandotunovela-icon2_zps05b59ac6.png"> </a>
     </div>
   </div>
 
-  <div class="row">
-      <div class="small-block-3">
+   <div class="col-md-4">   
+    <div class="curso3">    
+     <a href="/courses/3"> <img class="CoursesIcons" src="http://i69.photobucket.com/albums/i68/2372911/Escritura-para-blogs-icon2_zps60953a1f.png"> </a>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-6">
+    <div class="curso4">
+      <a href="/courses/4"> <img class="CoursesIcons" src="http://i69.photobucket.com/albums/i68/2372911/Redaccio3010n-Icon2_zpseb400470.png"/> </a>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="curso5">
+     <a href="/courses/5"> <img class="CoursesIcons" src="http://i69.photobucket.com/albums/i68/2372911/Bootcamp-icon2_zps372d1c5a.png"/> </a>
+    </div>
+  </div>
+
+
+
+<div class="row">
+    <div class="col-md-6">
+      <h3> ¡Comienza a escribir! </h3>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info">Regístrate</button>
+    </div>
+</div>
+
+
+
+<div id="footer"></div>
+<div id="footer1">
+ <!--div class="row"-->
+  <!--div class="col-md-4"-->
+    <a class="socialIcons" href="http://escritor.co/">
+      <img src="http://i69.photobucket.com/albums/i68/2372911/iconoescritor-blancoynegro_zps411f3547.png"/>
+    </a>
+    <div>
+      <p class="small"> Escritor.Co es un lugar donde puedes convertirte en escritor. 
+       Si tu sueño siempre ha sido escribir una gran novela o simplemente saber escribir bien, estás en el lugar adecuado.
+      </p>
+      <p> Hecho con <span class="glyphicon glyphicon-heart"> </span> en Sacatepéquez, Guatemala.
+      </p>
+      <p>
+      © 2014 Escritor.Co
+      </p>
+    </div>
+  <!--/div-->
+</div>
+
+<div id="footer2">
+  <!--div class="row"-->
+      <!--div class="col-md-4"-->
         <h6>
           <span>Nosotros</span>
         </h6>
-        <ul class="small">
-          <li><a href="http://escritor.co/">Blog</a></li>
-          <li><%= link_to "Acerca de", about_path %></li>
-          <li><a href="http://escritor.co/">Contact</a></li>
-        </ul>
-    </div>
+        <p class="small">
+          <a href="http://escritor.co/">Blog</a>
+          <br>
+          <%= link_to "Acerca de", about_path %>
+          <br>
+          <a href="http://escritor.co/">Contact</a>
+        </p>
+    <!--/div-->
   </div>
 
-  <div class="row">
-      <div class="small-block-3">
+<div id="footer3">
+  <!--div class="row"-->
+    <!--div class="col-md-4"-->
         <h6>
-          <span>Redes Sociales</span>
+          <span>¡Síguenos!</span>
         </h6>
-        <ul class="small">
-          <li><a href="http://escritor.co/">Blog</a></li>
-          <li><a href="https://www.facebook.com/escritor.Co">Facebook</a></li>
-          <li><a href="https://twitter.com/escritorco">Twitter</a></li>
-        </ul>
-    </div>
-  </div>
+        <p class="small">
+          <a class="socialIcons" href="https://www.facebook.com/escritor.Co" title="Escritor.Co en Facebook" alt="Escritor.Co Facebook Icon"><img src="http://i69.photobucket.com/albums/i68/2372911/iconfacebook_zpscde62683.png" style="width:4em; height:4em;" /></a>
+          <br>
+          <br>
+          <a class="socialIcons" href="http://twitter.com/EscritorCo" title="Escritor.Co en Twitter" alt="Escritor.Co Twitter Icon"><img src="http://i69.photobucket.com/albums/i68/2372911/icontwitter_zpsdbd1488d.png" style="width:4em; height:4em;" /></a>
+          <br>
+        </p>
+    <!--/div-->
 </div>
+
 
 </body>
 
