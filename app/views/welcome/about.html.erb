@@ -1,2 +1,251 @@
-<h1>Acerca de Escritor.Co</h1>
-<p>Creado por Andrea Dardón</p>
+<!--DOCTYPE html>
+<html>
+<head>
+
+<style media="screen" type="text/css">
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
+}
+body {
+  
+}
+.no-js {
+  padding-top: 106px;
+}
+h2 {
+  margin-top: 0;
+}
+.loading {
+  background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+  min-width: 960px;
+  opacity: 0;
+}
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+main {
+  overflow-x: hidden;
+}
+#preload {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hsContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hsContent {
+  max-width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+  .hsContent h2  {
+    color: #fff8de;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 5px;
+    font-size: 35px;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+  .hsContent p {
+    width: 400px;
+    color: #b2b2b2;
+  }
+  .hsContent a {
+    color: #b2b2b2;
+    text-decoration: underline;
+  }
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('http://i69.photobucket.com/albums/i68/2372911/Escritor-About4_zps73dd9592.png')}
+#slide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('http://i69.photobucket.com/albums/i68/2372911/Escritor-About1_zpsc16b0c2a.png')}
+#slide-2 .hsContent {
+  margin-left: -450px;
+  top: auto;
+}
+#slide-2 h2 {
+  position: fixed;
+  top: 70%;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('http://i69.photobucket.com/albums/i68/2372911/Escritor-About2_zpsd98134b4.png')}
+#slide-3 .hsContent {
+  margin-left: -239px;
+}
+  #slide-3 h2 {
+    color: #f2ead6;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+
+
+</style>
+</head>
+
+<body>
+    <main>
+      
+       <section id="slide-1" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-1"
+    >
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-center="bottom: 200px; opacity: 1"
+                data-top="bottom: 1200px; opacity: 0"
+                data-anchor-target="#slide-1 h2"
+            >
+                <h2>Escritor.Co</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="slide-2" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-anchor-target="#slide-2"
+    >
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-center="opacity: 1"
+                data-center-top="opacity: 0"
+                data--100-bottom="opacity: 0;"
+                data-anchor-target="#slide-2"
+            >
+                <h2>por Andrea Dardón</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="slide-3" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-anchor-target="#slide-4"
+    >
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-bottom-top="opacity: 0"
+                data-25p-top="opacity: 0"
+                data-top="opacity: 1" 
+                data-anchor-target="#slide-4"
+            >
+                <h2>Comienza a escribir.</h2>
+            </div>
+        </div>
+    </div>
+</section>
+         
+    </main>
+</body-->
+
+
+
+
+
+
+
+
+
+
+
